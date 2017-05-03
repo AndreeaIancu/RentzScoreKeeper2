@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RenzScoreKeeper</string>
+    <string name="app_name">RentzScoreKeeper</string>
     <string name="default_name_1">Player 1</string>
     <string name="default_name_2">Player 2</string>
     <string name="default_name_3">Player 3</string>
@@ -8,7 +8,7 @@
     <string name="default_name_6">Player 6</string>
     <string name="game_type_1">blind</string>
     <string name="game_type_2">positive</string>
-    <string name="subgame_name">Renz subgame</string>
+    <string name="subgame_name">Rentz subgame</string>
     <string name="king_of_hearts">K</string>
     <string name="queens">Q</string>
     <string name="diamonds">D</string>

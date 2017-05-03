@@ -16,113 +16,19 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Declaration of global variables used
      */
-    int scoreForPlayerOne = 0;
-    int scoreForPlayerTwo = 0;
-    int scoreForPlayerThree = 0;
-    int scoreForPlayerFour = 0;
-    int scoreForPlayerFive = 0;
-    int scoreForPlayerSix = 0;
-    EditText playerOneEdtTxt;
-    String playerOneName;
-    EditText playerTwoEdtTxt;
-    String playerTwoName;
-    EditText playerThreeEdtTxt;
-    String playerThreeName;
-    EditText playerFourEdtTxt;
-    String playerFourName;
-    EditText playerFiveEdtTxt;
-    String playerFiveName;
-    EditText playerSixEdtTxt;
-    String playerSixName;
+    int scoreForPlayerOne;
+    int scoreForPlayerTwo;
+    int scoreForPlayerThree;
+    int scoreForPlayerFour;
+    int scoreForPlayerFive;
+    int scoreForPlayerSix;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        /** retrieves the saved values of the scores when phone orientation
-         * changes between landscape and portrait mode
-         */
-        if (savedInstanceState != null) {
-            scoreForPlayerOne = savedInstanceState.getInt("scoreForPlayerOne");
-            displayScoreforPlayerOne(scoreForPlayerOne);
-            scoreForPlayerTwo = savedInstanceState.getInt("scoreForPlayerTwo");
-            displayScoreforPlayerTwo(scoreForPlayerTwo);
-            scoreForPlayerThree = savedInstanceState.getInt("scoreForPlayerThree");
-            displayScoreforPlayerThree(scoreForPlayerThree);
-            scoreForPlayerFour = savedInstanceState.getInt("scoreForPlayerFour");
-            displayScoreforPlayerFour(scoreForPlayerFour);
-            scoreForPlayerFive = savedInstanceState.getInt("scoreForPlayerFive");
-            displayScoreforPlayerFive(scoreForPlayerFive);
-            scoreForPlayerSix = savedInstanceState.getInt("scoreForPlayerSix");
-            displayScoreforPlayerSix(scoreForPlayerSix);
-            playerOneEdtTxt = (EditText) findViewById(R.id.player_1_view);
-            playerOneEdtTxt.setText(savedInstanceState.getString(playerOneName));
-            playerTwoEdtTxt = (EditText) findViewById(R.id.player_2_view);
-            playerTwoEdtTxt.setText(savedInstanceState.getString(playerTwoName));
-            playerThreeEdtTxt = (EditText) findViewById(R.id.player_3_view);
-            playerThreeEdtTxt.setText(savedInstanceState.getString(playerThreeName));
-            playerFourEdtTxt = (EditText) findViewById(R.id.player_4_view);
-            playerFourEdtTxt.setText(savedInstanceState.getString(playerFourName));
-            playerFiveEdtTxt = (EditText) findViewById(R.id.player_5_view);
-            playerFiveEdtTxt.setText(savedInstanceState.getString(playerFiveName));
-            playerSixEdtTxt = (EditText) findViewById(R.id.player_6_view);
-            playerSixEdtTxt.setText(savedInstanceState.getString(playerSixName));
-        }
-
+        setContentView(R.layout.activity_main);
     }
-
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        /**saves the current values of the scores in order to be able to
-         * use them on recreating the activity when phone orientation changes*/
-        outState.putInt("scoreForPlayerOne", scoreForPlayerOne);
-        outState.putInt("scoreForPlayerTwo", scoreForPlayerTwo);
-        outState.putInt("scoreForPlayerThree", scoreForPlayerThree);
-        outState.putInt("scoreForPlayerFour", scoreForPlayerFour);
-        outState.putInt("scoreForPlayerFive", scoreForPlayerFive);
-        outState.putInt("scoreForPlayerSix", scoreForPlayerSix);
-        playerOneEdtTxt = (EditText) findViewById(R.id.player_1_view);
-        outState.putString(playerOneName, playerOneEdtTxt.getText().toString());
-        playerTwoEdtTxt = (EditText) findViewById(R.id.player_2_view);
-        outState.putString(playerTwoName, playerTwoEdtTxt.getText().toString());
-
-        playerTwoEdtTxt = (EditText) findViewById(R.id.player_2_view);
-        outState.putString(playerTwoName, playerTwoEdtTxt.getText().toString());
-        playerThreeEdtTxt = (EditText) findViewById(R.id.player_3_view);
-        outState.putString(playerThreeName, playerThreeEdtTxt.getText().toString());
-        playerFourEdtTxt = (EditText) findViewById(R.id.player_4_view);
-        outState.putString(playerFourName, playerFourEdtTxt.getText().toString());
-        playerFiveEdtTxt = (EditText) findViewById(R.id.player_5_view);
-        outState.putString(playerFiveName, playerFiveEdtTxt.getText().toString());
-        playerSixEdtTxt = (EditText) findViewById(R.id.player_6_view);
-        outState.putString(playerSixName, playerSixEdtTxt.getText().toString());
-    }
-
-    @Override
-    public void onRestoreInstanceState(Bundle savedInstanceState) {
-        // Always call the superclass so it can restore the view hierarchy
-        super.onRestoreInstanceState(savedInstanceState);
-        // Restore state members from saved instance
-        playerOneEdtTxt = (EditText) findViewById(R.id.player_1_view);
-        playerOneEdtTxt.setText(savedInstanceState.getString(playerOneName));
-        playerTwoEdtTxt = (EditText) findViewById(R.id.player_2_view);
-        playerTwoEdtTxt.setText(savedInstanceState.getString(playerTwoName));
-        /**
-         playerTwoEdtTxt=(EditText)findViewById(R.id.player_2_view);
-         playerTwoEdtTxt.setText(savedInstanceState.getString(playerTwoName));
-         playerThreeEdtTxt=(EditText)findViewById(R.id.player_3_view);
-         playerThreeEdtTxt.setText(savedInstanceState.getString(playerThreeName));
-         playerFourEdtTxt = (EditText)findViewById(R.id.player_4_view);
-         playerFourEdtTxt.setText(savedInstanceState.getString(playerFourName));
-         playerFiveEdtTxt=(EditText)findViewById(R.id.player_5_view);
-         playerFiveEdtTxt.setText(savedInstanceState.getString(playerFiveName));
-         playerSixEdtTxt=(EditText)findViewById(R.id.player_6_view);
-         playerSixEdtTxt.setText(savedInstanceState.getString(playerSixName));
-         */
-
-    }
-
 
     /**
      * This method is called when one of the player checkboxes is checked.
@@ -1230,8 +1136,6 @@ public class MainActivity extends AppCompatActivity {
         playerFiveName.setText("Player 5");
         EditText playerSixName = (EditText) findViewById(R.id.player_6_view);
         playerSixName.setText("Player 6");
-
-        return;
     }
 
 
