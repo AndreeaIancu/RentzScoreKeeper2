@@ -1,0 +1,59 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#FF7043</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#4E342E</item>
+
+        <item name="colorPrimaryDark">#4E342E</item>
+
+    </style>
+    <style name="player_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#3E2723</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="editTextStyle" parent="player_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>\
+        <item name="android:inputType">text</item>
+        <item name="android:maxLength">12</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name = "score_text">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name ="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">0</item>
+    </style>
+
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FBE9E7</item>
+
+    </style>
+
+    <style name="checkboxStyle">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:text"> </item>
+    </style>
+
+
+
+</resources>
+
+

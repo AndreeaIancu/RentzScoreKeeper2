@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBE9E7"
+    android:fillViewport="true"
+    tools:context="com.example.android.rentzscorekeeper.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/main_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/player_1_checkbox"
+                        style="@style/checkboxStyle"
+                        android:onClick="selectOnlyOnePlayer" />
+
+                    <EditText
+                        android:id="@+id/player_1_view"
+                        style="@style/editTextStyle"
+                        android:hint="@string/default_name_1" />
+
+
+                    <TextView
+                        android:id="@+id/player_1_score"
+                        style="@style/score_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/player_2_checkbox"
+                        style="@style/checkboxStyle"
+                        android:onClick="selectOnlyOnePlayer" />
+
+
+                    <EditText
+                        android:id="@+id/player_2_view"
+                        style="@style/editTextStyle"
+                        android:hint="@string/default_name_2" />
+
+
+                    <TextView
+                        android:id="@+id/player_2_score"
+                        style="@style/score_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/player_3_checkbox"
+                        style="@style/checkboxStyle"
+                        android:onClick="selectOnlyOnePlayer" />
+
+
+                    <EditText
+                        android:id="@+id/player_3_view"
+                        style="@style/editTextStyle"
+                        android:hint="@string/default_name_3" />
+
+
+                    <TextView
+                        android:id="@+id/player_3_score"
+                        style="@style/score_text" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/player_4_checkbox"
+                        style="@style/checkboxStyle"
+                        android:onClick="selectOnlyOnePlayer" />
+
+
+                    <EditText
+                        android:id="@+id/player_4_view"
+                        style="@style/editTextStyle"
+                        android:hint="@string/default_name_4" />
+
+                    <TextView
+                        android:id="@+id/player_4_score"
+                        style="@style/score_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/player_5_checkbox"
+                        style="@style/checkboxStyle"
+                        android:onClick="selectOnlyOnePlayer" />
+
+
+                    <EditText
+                        android:id="@+id/player_5_view"
+                        style="@style/editTextStyle"
+                        android:hint="@string/default_name_5" />
+
+                    <TextView
+                        android:id="@+id/player_5_score"
+                        style="@style/score_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/player_6_checkbox"
+                        style="@style/checkboxStyle"
+                        android:onClick="selectOnlyOnePlayer" />
+
+
+                    <EditText
+                        android:id="@+id/player_6_view"
+                        style="@style/editTextStyle"
+                        android:hint="@string/default_name_6" />
+
+                    <TextView
+                        android:id="@+id/player_6_score"
+                        style="@style/score_text" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/game_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_linear_layout"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <CheckBox
+                android:id="@+id/blind_checkbox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/game_type_1"
+                android:textColor="#4E342E" />
+
+            <CheckBox
+                android:id="@+id/plus_checkbox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/game_type_2"
+                android:textColor="#4E342E" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subgame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_type_layout"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <Button
+                style="@style/buttonStyle"
+                android:onClick="kingOfHearts"
+                android:text="@string/king_of_hearts" />
+
+            <Button
+                style="@style/buttonStyle"
+                android:onClick="queens"
+                android:text="@string/queens" />
+
+            <Button
+                style="@style/buttonStyle"
+                android:onClick="diamonds"
+                android:text="@string/diamonds" />
+
+            <Button
+                style="@style/buttonStyle"
+                android:onClick="hands"
+                android:text="@string/hands" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rentz_text_view"
+            style="@style/player_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subgame_layout"
+            android:gravity="center_horizontal"
+            android:text="@string/subgame_name"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/subgame_layout_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rentz_text_view"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <Button
+                style="@style/buttonStyle"
+                android:onClick="rentzFirst"
+                android:text="@string/first_place" />
+
+            <Button
+                style="@style/buttonStyle"
+                android:onClick="rentzSecond"
+                android:text="@string/second_place" />
+
+            <Button
+                style="@style/buttonStyle"
+                android:onClick="rentzThird"
+                android:text="@string/third_place" />
+
+            <Button
+                style="@style/buttonStyle"
+                android:onClick="rentzFourth"
+                android:text="@string/fourth_place" />
+
+            <Button
+                style="@style/buttonStyle"
+                android:onClick="rentzFifth"
+                android:text="@string/fifth_place" />
+
+        </LinearLayout>
+
+
+        <Button
+            style="@style/buttonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="setScoreToZero"
+            android:text="@string/reset" />
+
+
+    </RelativeLayout>
+</ScrollView>

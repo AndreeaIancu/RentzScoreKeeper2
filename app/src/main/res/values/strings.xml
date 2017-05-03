@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">RenzScoreKeeper</string>
+    <string name="default_name_1">Player 1</string>
+    <string name="default_name_2">Player 2</string>
+    <string name="default_name_3">Player 3</string>
+    <string name="default_name_4">Player 4</string>
+    <string name="default_name_5">Player 5</string>
+    <string name="default_name_6">Player 6</string>
+    <string name="game_type_1">blind</string>
+    <string name="game_type_2">positive</string>
+    <string name="subgame_name">Renz subgame</string>
+    <string name="king_of_hearts">K</string>
+    <string name="queens">Q</string>
+    <string name="diamonds">D</string>
+    <string name="hands">H</string>
+    <string name="first_place">1ST</string>
+    <string name="second_place">2ND</string>
+    <string name="third_place">3RD</string>
+    <string name="fourth_place">4TH</string>
+    <string name="fifth_place">5TH</string>
+    <string name="reset">RESET</string>
+    <string name="error_message">Please select one player checkbox in order to start counting the score</string>
+</resources>
